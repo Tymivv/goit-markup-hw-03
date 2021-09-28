@@ -33,6 +33,10 @@ a{
   list-style: none
 }
 
+ul { 
+  padding-inline-start: 0; 
+}
+
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
@@ -52,7 +56,10 @@ body {
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
-  border: 1px solid red; 
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
   
 }
 
@@ -66,8 +73,6 @@ body {
 } 
 
 /* logo */
-
-
 
 .main-nav {
   display: flex;
@@ -109,7 +114,7 @@ list-style: none;
 }
 
 .page-header{
-  display: flex;
+  
   border-bottom: 1px;
 }
 .footer-address-list{
@@ -317,7 +322,10 @@ color: rgba(255, 255, 255, 0.6);
 .addres, .footer-mail, .footer-telef{
 font-style: normal;
 font-weight: normal;
+}
 
+.footer-container{
+  display: block;
 }
 
 /*_____________________ */
@@ -345,6 +353,9 @@ font-size: 16px;
 line-height: 1.62;
 text-align: center;
 letter-spacing: 0.03em;
+padding: 10px 32px;
+border: none;
+border-radius: 4px;
 
 }
 
