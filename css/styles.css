@@ -215,7 +215,8 @@ background-color: #188CE8;
 /* Преимущества */
 
 .Advantages{
- margin-bottom: 90px; 
+ margin-top: 94px; 
+ margin-bottom: 94px;
 }
 
 .Advantages-list{
@@ -241,6 +242,7 @@ background-color: #188CE8;
 /* Чем мы занимаемся */
 .work{
   list-style: none;
+  margin-bottom: 94px;
 }
 
 .work-list{
@@ -280,6 +282,7 @@ text-align: center;
 line-height: 1.16;
 text-align: center;
 color: var(--title-text-color) ;
+margin-bottom: 94px;
 }
 .team-title{
 color: var(--title-text-color);
@@ -294,6 +297,7 @@ text-align: center;
 /* Футер */
 .footer{
   background: #2F303A;
+ 
 
 }
 
@@ -360,6 +364,9 @@ border-radius: 4px;
 }
 
 /* роботи в портфоліо */
+.project{
+  margin-top: 34px;
+}
 .project-title {
 color: var(--title-text-color);
 
