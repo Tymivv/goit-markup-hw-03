@@ -13,7 +13,7 @@ html {
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2F303A;
-  --primary-white-color: #E5E5E5;
+  --primary-white-color: #ffffff;
   --text-line: #2196F3;
   --white-color: #ffffff;
   --background-color-button: #F5F4FA;
@@ -35,7 +35,8 @@ a{
 
 }
 
-ul { 
+ul,
+li { 
   padding: 0;
   margin: 0;
   list-style: none;
@@ -54,9 +55,11 @@ body {
 }
 
 .header-container{
+  height: 80px;  
   display: flex;
   align-items: center;
   justify-content: space-between;
+
 }
 
 .container {
@@ -66,18 +69,18 @@ body {
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
-  /* border: 1px solid red; */
+  /* border: 1px solid red;
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;  */
   
 }
 
+.site-nav > .list:first-child{
+margin-left: 0;
+}
 
 .list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
    margin-left: 50px;
 
 
@@ -94,6 +97,10 @@ body {
   display: flex;
   /* margin-left: 70px; */
 }
+
+.logo-site{
+margin-right: 93px;
+}
 .logo {
   text-decoration: none;
   color: var(--text-line);
@@ -104,7 +111,7 @@ body {
   line-height: 1.9;
   letter-spacing: 0.03em;
 
-  margin-right: 90px;
+  
 }
 .logo-header {
   color: var(--title-text-color);
@@ -127,7 +134,8 @@ list-style: none;
 .page-header{
   
   border-bottom: 1px;
-}
+  }
+
 .footer-address-list{
  display: block;
 
@@ -193,9 +201,10 @@ letter-spacing: 0.06em;
 text-transform: uppercase;
 
 margin-top: 0;
-margin-bottom: 30px;
+
 max-width: 650px;
 margin: 0 auto;
+margin-bottom: 30px;
 }   
  
 
@@ -225,27 +234,36 @@ background-color: #188CE8;
 
 /* Преимущества */
 
-.Advantages{
+.title-none{
+  display: none;
+}
+.advantages{
  margin-top: 94px; 
  margin-bottom: 94px;
 }
 
-.Advantages-list{
+.advantages-list{
  display: flex;
 
 }
-.Advantages-title {
+.advantages-title {
   color: var(--title-text-color);
   text-transform: uppercase;
   line-height: 1.14;
   font-size: 14px;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
-.Advantages-box{
-  margin-right: 30px;
+.advantages-box{
+  margin-left: 30px;
 }
-.Advantages-text {
+
+
+.advantages-box:first-child{
+margin-left: 0;
+}
+.advantages-text {
     color: var(--primary-text-color);
      /* flex-wrap: wrap; */
 }
@@ -266,6 +284,7 @@ font-size: 36px;
 line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
+margin-bottom: 50px;
 }
 
 .work-box{
@@ -273,15 +292,23 @@ letter-spacing: 0.03em;
 }
 /* Наша команда */
 
+.team{
+  padding: 94px;
+  background-color: var(--background-color-button);
+}
 .team-list{
 display: flex;
 }
 
 .team-icon{
-  margin-right: 30px;
-  margin-bottom: 90px;
-}
+  margin-left: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 
+}
+.team-icon:first-child{
+  margin-left: 0px
+}
 .team-text{
 font-size: 16px;
 line-height: 1.18;
@@ -293,7 +320,7 @@ text-align: center;
 line-height: 1.16;
 text-align: center;
 color: var(--title-text-color) ;
-margin-bottom: 94px;
+margin-bottom: 50px;
 }
 .team-title{
 color: var(--title-text-color);
@@ -308,6 +335,7 @@ text-align: center;
 /* Футер */
 .footer{
   background: #2F303A;
+  padding: 60px 0;
  
 
 }
@@ -371,13 +399,17 @@ letter-spacing: 0.03em;
 padding: 10px 32px;
 border: none;
 border-radius: 4px;
+font-family: inherit;
 
 }
 
 /* роботи в портфоліо */
 .project{
-  margin-top: 34px;
+  margin-bottom: 94px;
 }
+
+ 
+
 .project-title {
 color: var(--title-text-color);
 
@@ -386,12 +418,21 @@ line-height: 2;
 letter-spacing: 0.06em;
 }
 
-.project-list-nav{
+.project-list-ul{
 display: flex;
- margin-right: 8px;
 justify-content: center;
 }
+.project-list-nav{
+display: flex;
 
+ margin-left: 8px;
+
+margin-top: 34px;
+}
+
+.project-list-nav:first-child{
+ margin-left: 0px; 
+}
 .project-button{
 list-style: none;
 align-items: center;
@@ -404,10 +445,6 @@ line-height: 1.87;
 }
 
 .project-list{
-    padding: 0;
-  margin: 0;
-  list-style: none;
-
   display: flex;
   flex-wrap: wrap;
   margin-left: calc(-1 * 30px);
