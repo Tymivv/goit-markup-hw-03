@@ -32,6 +32,10 @@ a {
   text-decoration: none;
 }
 
+img{
+  display: block;
+}
+
 ul,
 li {
   padding: 0;
@@ -51,6 +55,9 @@ body {
   margin: 0;
 }
 
+.section {
+  padding: 94px 0;
+}
 
 .visually-hidden {
   position: absolute;
@@ -121,19 +128,9 @@ body {
   color: var(--white-color);
 }
 
-/* Site nav */
-.footer-address-list,
-.site-nav,
-.Advantages-list,
-.address-list,
-.work-list,
-.project-list,
-.team-list {
-  list-style: none;
-}
 
 .page-header {
-  border-bottom: 1px;
+  border-bottom: 1px solid #ECECEC;
 }
 
 .footer-address-list {
@@ -229,15 +226,8 @@ body {
   background-color: #188ce8;
 }
 
-/* Преимущества */
+/* -----------------Преимущества---------------------------- */
 
-.title-none {
-  display: none;
-}
-.advantages {
-  margin-top: 94px;
-  margin-bottom: 94px;
-}
 
 .advantages-list {
   display: flex;
@@ -263,16 +253,13 @@ body {
   /* flex-wrap: wrap; */
 }
 
-/* Чем мы занимаемся */
-.work {
-  list-style: none;
-  margin-bottom: 94px;
-}
+/* -----------Чем мы занимаемся---------------------- */
 
 .work-list {
   display: flex;
 }
-.work-title {
+.work-title,
+.team-our-title{
   color: var(--title-text-color);
 
   font-size: 36px;
@@ -282,14 +269,14 @@ body {
   margin-bottom: 50px;
 }
 
-.work-box {
+.work-box:not(:last-child) {
   margin-right: 30px;
 }
-/* Наша команда */
+
+/* ------------------ Наша команда--------------------- */
 
 .team {
-  padding: 94px;
-  background-color: var(--background-color-button);
+    background-color: var(--background-color-button);
 }
 .team-list {
   display: flex;
@@ -310,13 +297,7 @@ body {
   text-align: center;
 }
 
-.team-title1 {
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  color: var(--title-text-color);
-  margin-bottom: 50px;
-}
+
 .team-title {
   color: var(--title-text-color);
 
@@ -324,6 +305,12 @@ body {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+
+  margin-bottom: 10px;
+}
+.team-wrapper{
+  padding: 30px 0;
+  background-color: #ffffff;
 }
 
 /* Футер */
@@ -376,7 +363,7 @@ body {
 }
 
 /*_____________________ */
-/* сторінка portfolio */
+/* -------------------сторінка portfolio------------------ */
 
 /* header portfolio */
 
@@ -387,7 +374,7 @@ body {
 /* кнопки в портфоліо */
 .project-button:hover,
 .project-button:focus {
-  background: var(--text-line);
+  background: #2196F3;
   color: var(--white-color);
 }
 .project-button {
@@ -406,9 +393,7 @@ body {
 }
 
 /* роботи в портфоліо */
-.project {
-  margin-bottom: 94px;
-}
+
 
 .project-title {
   color: var(--title-text-color);
@@ -421,16 +406,16 @@ body {
 .project-list-ul {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
-.project-list-nav {
+.project-list-item {
   display: flex;
 
   margin-left: 8px;
 
-  margin-top: 34px;
 }
 
-.project-list-nav:first-child {
+.project-list-item:first-child {
   margin-left: 0px;
 }
 .project-button {
@@ -458,5 +443,8 @@ body {
 }
 
 .project-title-text{
-  margin: 20px 24px 20px 24px;
+  padding: 20px 24px 20px 24px;
+  border-left: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
 }
